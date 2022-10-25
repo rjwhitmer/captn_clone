@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'dashboards#index'
+
+  resources :users
+  resources :teams
 end
