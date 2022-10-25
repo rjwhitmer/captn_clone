@@ -1,3 +1,5 @@
 # frozen_string_literal: true
 
-class Team < ApplicationRecord; end
+class Team < ApplicationRecord
+  has_many :team_members, dependent: :destroy
+end

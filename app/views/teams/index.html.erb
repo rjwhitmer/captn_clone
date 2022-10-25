@@ -2,7 +2,7 @@
   <h1>Current Teams</h1>
   <% @teams.each do |team| %>
   <div>
-    <%= team.name %>
+    <%= link_to team.name, team_path(team.id) %>
     <%= team.team_color %>
   </div>
   <% end %>
