@@ -1,0 +1,8 @@
+<% if @teams.any? %>
+  <% @teams.each do |team| %>
+    <%= team.name %>
+    <%= team.team_color %>
+  <% end %>
+<% else %>
+  <h3>No teams yet!</h3>
+<% end %>
