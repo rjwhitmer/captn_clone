@@ -10,5 +10,101 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
+  create_table "games", force: :cascade do |t|
+    t.string "location"
+    t.integer "league_session_id"
+    t.datetime "game_date_time"
+    t.integer "home_team_id"
+    t.integer "away_team_id"
+    t.integer "game_type_id"
+    t.integer "home_team_score"
+    t.integer "away_team_score"
+    t.boolean "notification_sent", default: false
+    t.boolean "captain_notification_sent", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["away_team_id"], name: "index_games_on_away_team_id"
+    t.index ["home_team_id"], name: "index_games_on_home_team_id"
+    t.index ["league_session_id"], name: "index_games_on_league_session_id"
+  end
+
+  create_table "league_sessions", force: :cascade do |t|
+    t.integer "location_id"
+    t.integer "league_id"
+    t.string "competition_level"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["league_id"], name: "index_league_sessions_on_league_id"
+    t.index ["location_id"], name: "index_league_sessions_on_location_id"
+  end
+
+  create_table "leagues", force: :cascade do |t|
+    t.string "competition_level"
+    t.integer "coed"
+    t.integer "minimum_age"
+    t.integer "maximum_age"
+    t.string "alert"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "name"
+    t.string "zip"
+    t.string "alert"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "team_members", force: :cascade do |t|
+    t.integer "team_id"
+    t.integer "user_id"
+    t.integer "role_id"
+    t.integer "position_id"
+    t.string "email"
+    t.string "phone_number"
+    t.boolean "has_paid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_team_members_on_team_id"
+    t.index ["user_id"], name: "index_team_members_on_user_id"
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.integer "league_id"
+    t.integer "user_id"
+    t.string "competition_level"
+    t.integer "coed"
+    t.string "name"
+    t.string "team_color"
+    t.boolean "track_payments"
+    t.boolean "auto_search"
+    t.integer "search_timer"
+    t.integer "degrees_of_separation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["league_id"], name: "index_teams_on_league_id"
+    t.index ["user_id"], name: "index_teams_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "gender"
+    t.date "birthday"
+    t.integer "experience"
+    t.integer "rating"
+    t.string "phone_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "team_members", "teams"
+  add_foreign_key "team_members", "users"
+  add_foreign_key "teams", "leagues"
+  add_foreign_key "teams", "users"
 end
