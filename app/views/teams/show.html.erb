@@ -1,0 +1,9 @@
+<h2><%= @team.name %></h2>
+
+<% if @players.any? %>
+  <% @players.each do |player| %>
+    <%= render partial: 'player', locals: { player: player } %>
+  <% end %>
+<% else %>
+  <h2>No players for this team!</h2>
+<% end %>

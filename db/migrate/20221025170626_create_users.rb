@@ -9,6 +9,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.integer :experience
       t.integer :rating
       t.string :phone_number
+      t.references :team
 
       t.timestamps
     end

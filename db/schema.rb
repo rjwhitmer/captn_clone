@@ -13,20 +13,12 @@
 ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
   create_table "games", force: :cascade do |t|
     t.string "location"
-    t.integer "league_session_id"
+    t.string "sport"
     t.datetime "game_date_time"
-    t.integer "home_team_id"
-    t.integer "away_team_id"
-    t.integer "game_type_id"
     t.integer "home_team_score"
     t.integer "away_team_score"
-    t.boolean "notification_sent", default: false
-    t.boolean "captain_notification_sent", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["away_team_id"], name: "index_games_on_away_team_id"
-    t.index ["home_team_id"], name: "index_games_on_home_team_id"
-    t.index ["league_session_id"], name: "index_games_on_league_session_id"
   end
 
   create_table "league_sessions", force: :cascade do |t|
@@ -85,8 +77,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
     t.integer "experience"
     t.integer "rating"
     t.string "phone_number"
+    t.integer "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_users_on_team_id"
   end
 
   add_foreign_key "teams", "leagues"
