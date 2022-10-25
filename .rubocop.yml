@@ -1,0 +1,29 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - bin/**
+    - db/**/*
+    - test/dummy/**/*
+    - test/**/*
+    - vendor/bundle/**/*
+
+Layout/LineLength:
+  Max: 120
+
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - config/environments/*.rb
+    - config/routes.rb
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
