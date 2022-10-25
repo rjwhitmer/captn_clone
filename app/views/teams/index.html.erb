@@ -1,7 +1,10 @@
 <% if @teams.any? %>
+  <h1>Current Teams</h1>
   <% @teams.each do |team| %>
+  <div>
     <%= team.name %>
     <%= team.team_color %>
+  </div>
   <% end %>
 <% else %>
   <h3>No teams yet!</h3>
