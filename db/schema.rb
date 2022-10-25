@@ -59,20 +59,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "team_members", force: :cascade do |t|
-    t.integer "team_id"
-    t.integer "user_id"
-    t.integer "role_id"
-    t.integer "position_id"
-    t.string "email"
-    t.string "phone_number"
-    t.boolean "has_paid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["team_id"], name: "index_team_members_on_team_id"
-    t.index ["user_id"], name: "index_team_members_on_user_id"
-  end
-
   create_table "teams", force: :cascade do |t|
     t.integer "league_id"
     t.integer "user_id"
@@ -103,8 +89,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "team_members", "teams"
-  add_foreign_key "team_members", "users"
   add_foreign_key "teams", "leagues"
   add_foreign_key "teams", "users"
 end
