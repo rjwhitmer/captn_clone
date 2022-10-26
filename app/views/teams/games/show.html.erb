@@ -1,0 +1,27 @@
+<div class="m-5">
+  <div class="mt-5">
+    <h2>When?</h2>
+    <h3><%= @game.game_date_time.to_fs(:short) %></h3>
+  </div>
+
+  <div>
+    <h2>Where?</h2>
+    <h3><%= @game.location %></h3>
+  </div>
+
+  <div class="mt-5">
+    <h2>Who?</h2>
+    <% if @players.any? %>
+      <% @players.each do |player| %>
+        <div class="card w-25 d-flex flex-column p-2">
+          <div>
+            <%= player.user.first_name %></br>
+            <%= player.team.name %>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <h2>There are no players signed up for this game yet!</h2>
+    <% end %>
+  </div>
+</div>

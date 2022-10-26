@@ -8,6 +8,11 @@ module Teams
       @games = Game.all
     end
 
+    def show
+      @game = Game.find(params[:id])
+      @players = PlayerGame.where(game: @game)
+    end
+
     def new; end
 
     def create; end

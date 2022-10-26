@@ -1,17 +1,21 @@
-<h2><%= @team.name %></h2>
+<div class="m-auto w-25 d-flex flex-column">
+  <h2><%= @team.name %></h2>
 
-<h3>Current Members</h3>
-<%= link_to 'Add a player', team_players_path(@team) %>
-<% if @players.any? %>
-  <%= render partial: 'player', locals: { player: @players } %>
-<% else %>
-  <h2>No players for this team!</h2>
-<% end %>
+  <div class="d-flex justify-content-between align-items-center">
+    <h3>Current Members</h3>
+    <%= link_to 'Add a player', team_players_path(@team) %>
+  </div>
+  <% if @players.any? %>
+    <%= render partial: 'player', locals: { player: @players } %>
+  <% else %>
+    <h2>No players for this team!</h2>
+  <% end %>
 
-<h3>Upcoming Games</h3>
-<% if @games.any? %>
-  <%= render partial: 'game', locals: { game: @games } %>
-<% else %>
-  <h2>No upcoming games!</h2>
-<% end %>
+  <h3>Upcoming Games</h3>
+  <% if @games.any? %>
+    <%= render partial: 'game', locals: { game: @games } %>
+  <% else %>
+    <h2>No upcoming games!</h2>
+  <% end %>
+</div>
 
