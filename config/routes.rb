@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :teams do
     scope module: :teams do
       resources :players
+      resources :games
     end
   end
 end

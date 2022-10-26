@@ -1,7 +1,7 @@
 <% @games.each do |game| %>
-  <div>
+  <%= link_to team_game_path(@team, game) do %>
     <%= game.sport %>
     <%= game.game_date_time.to_date unless game.game_date_time.blank? %>
     <%= game.location %>
-  </div>
+  <% end %>
 <% end %>
