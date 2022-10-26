@@ -2,13 +2,16 @@ game1:
   sport: Soccer
   game_date_time: <%= 7.days.from_now %>
   team: Team1
+  location: Apex field house
 
 game2:
   sport: Soccer
   game_date_time: <%= 14.days.from_now %>
   team: Team1
+  location: Apex field house
 
 game3:
   sport: Soccer
   game_date_time: <%= 21.days.from_now %>
   team: Team1
+  location: Apex field house

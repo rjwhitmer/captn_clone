@@ -1,11 +1,14 @@
-<% if @teams.any? %>
-  <h1>Current Teams</h1>
-  <% @teams.each do |team| %>
-  <div>
-    <%= link_to team.name, team_path(team.id) %>
-    <%= team.team_color %>
-  </div>
+<div class="m-auto w-50 d-flex flex-column">
+  <% if @teams.any? %>
+    <h1>Current Teams</h1>
+    <% @teams.each do |team| %>
+    <div>
+      <%= link_to team.name, team_path(team.id) %>
+      <p class="mb-0">Team color: <%= team.team_color %></p>
+      <p>Number of players: <%= team.users.count %></p>
+    </div>
+    <% end %>
+  <% else %>
+    <h3>No teams yet!</h3>
   <% end %>
-<% else %>
-  <h3>No teams yet!</h3>
-<% end %>
+</div>
