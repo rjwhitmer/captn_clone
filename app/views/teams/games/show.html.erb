@@ -1,23 +1,25 @@
-<div class="m-5">
-  <div class="mt-5">
-    <h2>When?</h2>
-    <h3><%= @game.game_date_time.to_fs(:short) %></h3>
+<div class="d-flex flex-column m-auto align-items-center">
+  <div class="mt-5 w-50">
+    <h2 class="d-inline-block">When?</h2>
+    <h3 class="d-inline-block ms-4"><%= @game.game_date_time.to_fs(:short) %></h3>
   </div>
 
-  <div>
-    <h2>Where?</h2>
-    <h3><%= @game.location %></h3>
+  <div class="mt-5 w-50">
+    <h2 class="d-inline-block">Where?</h2>
+    <h3 class="d-inline-block ms-4"><%= @game.location %></h3>
   </div>
 
-  <div class="mt-5">
-    <h2>Who?</h2>
+  <div class="mt-5 w-50">
+    <h2 class="d-inline-block">Who?</h2>
     <% if @players.any? %>
       <% @players.each do |player| %>
-        <div class="card w-25 d-flex flex-column p-2">
+        <div class="card w-50 d-flex flex-row p-2 justify-content-between">
           <div>
             <%= player.user.first_name %></br>
             <%= player.team.name %>
           </div>
+          <% # TODO add player status for game %>
+          <p>Status: Currently unknown</p>
         </div>
       <% end %>
     <% else %>
