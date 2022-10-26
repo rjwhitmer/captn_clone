@@ -6,6 +6,7 @@ class CreateGames < ActiveRecord::Migration[7.0]
       t.datetime :game_date_time
       t.integer :home_team_score
       t.integer :away_team_score
+      t.references :team
 
       t.timestamps
     end

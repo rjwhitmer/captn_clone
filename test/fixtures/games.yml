@@ -1,0 +1,14 @@
+game1:
+  sport: Soccer
+  game_date_time: 11/10/2022
+  team: Team1
+
+game2:
+  sport: Soccer
+  game_date_time: 11/17/2022
+  team: Team1
+
+game3:
+  sport: Soccer
+  game_date_time: 11/24/2022
+  team: Team1

@@ -17,8 +17,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_25_170821) do
     t.datetime "game_date_time"
     t.integer "home_team_score"
     t.integer "away_team_score"
+    t.integer "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_games_on_team_id"
   end
 
   create_table "league_sessions", force: :cascade do |t|
