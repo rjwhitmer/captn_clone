@@ -1,4 +1,6 @@
-<div>
-  <%= player.first_name %>
-  <%= player.last_name %>
-</div>
+<% @players.each do |player| %>
+  <div>
+    <%= player.first_name %>
+    <%= player.last_name %>
+  </div>
+<% end %>

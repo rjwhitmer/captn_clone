@@ -3,6 +3,7 @@ Bob:
   last_name: Whitmer
   email: rjwhitmercc@gmail.com
   birthday: 12/11/1987
+  team: Team1
   phone_number: '1234567890'
 
 Evan:
@@ -10,9 +11,11 @@ Evan:
   last_name: Lepolt
   email: evan.lepolt@gmail.com
   birthday: 12/15/1990
+  team: Team1
 
 Carolina:
   first_name: Carolina
   last_name: Garcia-Rodriguez
   email: carolinagr222@gmail.com
   birthday: 05/15/1990
+  team: Team1

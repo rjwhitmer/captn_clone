@@ -1,9 +1,16 @@
 <h2><%= @team.name %></h2>
 
+<h3>Current Members</h3>
 <% if @players.any? %>
-  <% @players.each do |player| %>
-    <%= render partial: 'player', locals: { player: player } %>
-  <% end %>
+  <%= render partial: 'player', locals: { player: @players } %>
 <% else %>
   <h2>No players for this team!</h2>
 <% end %>
+
+<h3>Upcoming Games</h3>
+<% if @games.any? %>
+  <%= render partial: 'game', locals: { game: @games } %>
+<% else %>
+  <h2>No upcoming games!</h2>
+<% end %>
+

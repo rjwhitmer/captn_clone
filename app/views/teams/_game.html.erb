@@ -1,0 +1,7 @@
+<% @games.each do |game| %>
+  <div>
+    <%= game.sport %>
+    <%= game.game_date_time.to_date unless game.game_date_time.blank? %>
+    <%= game.location %>
+  </div>
+<% end %>

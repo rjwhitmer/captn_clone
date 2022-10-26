@@ -8,6 +8,7 @@ class TeamsController < ApplicationController
 
   def show
     @players = User.where(team_id: params[:id])
+    @games = @team.games.order(:game_date_time)
   end
 
   def set_team
