@@ -9,5 +9,10 @@ Rails.application.routes.draw do
   root 'dashboards#index'
 
   resources :users
-  resources :teams
+
+  resources :teams do
+    scope module: :teams do
+      resources :players
+    end
+  end
 end

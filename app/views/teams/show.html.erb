@@ -1,6 +1,7 @@
 <h2><%= @team.name %></h2>
 
 <h3>Current Members</h3>
+<%= link_to 'Add a player', team_players_path(@team) %>
 <% if @players.any? %>
   <%= render partial: 'player', locals: { player: @players } %>
 <% else %>
