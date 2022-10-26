@@ -1,0 +1,14 @@
+pg1:
+  team: Team1
+  user: Bob
+  game: game1
+
+pg2:
+  team: Team1
+  user: Evan
+  game: game1
+
+pg3:
+  team: Team1
+  user: Carolina
+  game: game1
