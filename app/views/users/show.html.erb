@@ -1,0 +1,25 @@
+<h1 class="text-center">Welcome <%= @full_name %>!</h1>
+
+<h3 class="text-center mt-5">Your information</h3>
+
+<div>
+  <div class="card col-2 ms-5 d-inline-block">
+    <div class="card-body">
+      <h5>Games</h5>
+      <div>
+        <% @games.each do |game| %>
+          <div class="card-body border">
+            <p>Team: <%= game.team.name %></p>
+            <p>Location: <%= game.game.location %></p>
+            <p>When: <%= game.game.game_date_time.to_fs(:short) %></p>
+            <p>Sport: <%= game.game.sport %></p>
+            <p>Final score: <%= game.game.home_team_score %> - <%= game.game.away_team_score %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="card col-2 ms-5 d-inline-block">
+    <div class="card-body"></div>
+  </div>
+</div>
