@@ -20,9 +20,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     @user.transaction do
+      @user.validate!
       @user.save!
     end
-    redirect_to :index
+    redirect_to users_path
   rescue ActiveRecord::RecordInvalid
     render :new, status: :unprocessable_entity
   end
@@ -40,13 +41,13 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy!
 
-    render :index, notice[:flash] = 'User was successfully deleted'
+    redirect_to users_path, notice: 'User was successfully deleted'
   end
 
   private
 
   def user_params
-    params.permit(:first_name, :last_name, :phone_number, :email)
+    params.require(:user).permit(:first_name, :last_name, :phone_number, :email)
   end
 
   def set_user

@@ -1,3 +1,5 @@
+<%= link_to 'Join Captn!', new_user_path %>
+
 <% if @users.any? %>
   <% @users.each do |user| %>
     <%= link_to user.first_name, user_path(user) %>
