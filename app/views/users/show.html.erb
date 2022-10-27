@@ -2,6 +2,14 @@
 
 <h3 class="text-center mt-5">Your information</h3>
 
+<div class="card m-auto col-2">
+  <div class="card-body">
+    <p class="d-block"><i class="bi bi-envelope me-2"></i><%= @user.email %></p>
+    <p class="d-block"><i class="bi bi-telephone me-2"></i><%= @user.phone_number %></p>
+    <p class="d-block"><i class="bi bi-calendar-event me-2"></i><%= @user.birthday %></p>
+  </div>
+</div>
+
 <div>
   <div class="card col-2 ms-5 d-inline-block">
     <div class="card-body">
@@ -18,8 +26,5 @@
         <% end %>
       </div>
     </div>
-  </div>
-  <div class="card col-2 ms-5 d-inline-block">
-    <div class="card-body"></div>
   </div>
 </div>
