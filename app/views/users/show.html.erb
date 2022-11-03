@@ -1,0 +1,36 @@
+<h1 class="text-center">Welcome <%= @full_name %>!</h1>
+
+<div class="m-auto col-2">
+  <h3 class="text-center mt-5 d-inline-block">Your information</h3>
+  <%= link_to 'Edit', edit_user_path %>
+</div>
+
+<div class="card m-auto col-2">
+  <div class="card-body">
+    <p class="d-block"><i class="bi bi-envelope me-2"></i><%= @user.email %></p>
+    <p class="d-block"><i class="bi bi-telephone me-2"></i><%= @user.phone_number %></p>
+    <p class="d-block"><i class="bi bi-calendar-event me-2"></i><%= @user.birthday %></p>
+  </div>
+</div>
+
+<div>
+  <div class="card col-2 ms-5 d-inline-block">
+    <div class="card-body">
+      <h5>Games</h5>
+      <div>
+        <% @games.each do |game| %>
+          <div class="card-body border">
+            <p>Team: <%= game.team.name %></p>
+            <p>Location: <%= game.game.location %></p>
+            <p>When: <%= game.game.game_date_time.to_fs(:short) %></p>
+            <p>Sport: <%= game.game.sport %></p>
+            <p>Final score: <%= game.game.home_team_score %> - <%= game.game.away_team_score %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= button_to "Delete User", user_path(@user), method: :delete %>
