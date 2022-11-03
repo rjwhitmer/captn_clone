@@ -8,6 +8,10 @@ ruby '3.1.1'
 # Bootstrap for styling
 gem 'bootstrap', '~> 5.2.2'
 
+# Rubocop for linting
+gem 'rubocop'
+gem 'rubocop-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.2', '>= 7.0.2.4'
 
