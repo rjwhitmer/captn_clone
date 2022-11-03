@@ -29,7 +29,7 @@ module Teams
     private
 
     def player_params
-      params.require(:user).permit(:first_name, :last_name, :phone_number, :email)
+      params.permit(:first_name, :last_name, :phone_number, :email)
     end
 
     def set_team
