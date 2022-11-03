@@ -1,6 +1,9 @@
 <h1 class="text-center">Welcome <%= @full_name %>!</h1>
 
-<h3 class="text-center mt-5">Your information</h3>
+<div class="m-auto col-2">
+  <h3 class="text-center mt-5 d-inline-block">Your information</h3>
+  <%= link_to 'Edit', edit_user_path %>
+</div>
 
 <div class="card m-auto col-2">
   <div class="card-body">

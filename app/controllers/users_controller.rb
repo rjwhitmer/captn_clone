@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[show update destroy]
+  before_action :set_user, only: %i[edit show update destroy]
 
   def index
     @users = User.all
@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
+  def edit; end
 
   def show
     @full_name = "#{@user.first_name} #{@user.last_name}"
@@ -34,6 +36,7 @@ class UsersController < ApplicationController
     @user.transaction do
       @user.save!
     end
+    redirect_to user_path(@user)
   rescue ActiveRecord::RecordInvalid
     render :update, status: :unprocessable_entity
   end
@@ -47,7 +50,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :phone_number, :email)
+    params.require(:user).permit(:first_name, :last_name, :phone_number, :email, :birthday)
   end
 
   def set_user
