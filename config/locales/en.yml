@@ -31,3 +31,5 @@
 
 en:
   hello: "Hello world"
+user:
+  destroy: User was successfully destroyed
