@@ -33,5 +33,13 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+.env
+.env.*.local
+.env.local
 
+# Ignore assets builds to keep them fresh.
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# Ignore Node JS modules as we don't want them in git.
 /node_modules
