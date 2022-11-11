@@ -44,9 +44,9 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
 
-bootstrap-icons@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.9.1.tgz"
+bootstrap-icons@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.10.0.tgz#8641a4a80e708a71a16e20b8d2235ee151f3725c"
 
 bootstrap@^5.2.2:
   version "5.2.2"
