@@ -48,9 +48,9 @@ bootstrap-icons@^1.9.1:
   version "1.9.1"
   resolved "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.9.1.tgz"
 
-bootstrap@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.2.tgz"
+bootstrap@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.3.tgz#54739f4414de121b9785c5da3c87b37ff008322b"
 
 braces@~3.0.2:
   version "3.0.2"
