@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.1'
 
 # Bootstrap for styling
-gem 'bootstrap', '~> 5.2.2'
+gem 'bootstrap', '~> 5.2.3'
 
 # Rubocop for linting
 gem 'rubocop'
