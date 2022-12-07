@@ -2,13 +2,93 @@
 # yarn lockfile v1
 
 
-"@esbuild/android-arm@0.15.13":
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.15.13.tgz#ce11237a13ee76d5eae3908e47ba4ddd380af86a"
+"@esbuild/android-arm64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.16.1.tgz#3843eb0ae218a7139d5c6eccfea8d65cef4c54f3"
 
-"@esbuild/linux-loong64@0.15.13":
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.13.tgz#64e8825bf0ce769dac94ee39d92ebe6272020dfc"
+"@esbuild/android-arm@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.16.1.tgz#5cc3f277b0c853da9d6241f8024da6a7bf6964b9"
+
+"@esbuild/android-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-x64/-/android-x64-0.16.1.tgz#8d8cddad9accf599518207b03ee4a17d23caf250"
+
+"@esbuild/darwin-arm64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-arm64/-/darwin-arm64-0.16.1.tgz#03e64371d018a90c2d25ffb5f743e78d7ee29098"
+
+"@esbuild/darwin-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-x64/-/darwin-x64-0.16.1.tgz#9036cf2c6d796cf6040693c77e7343d2cc37fbed"
+
+"@esbuild/freebsd-arm64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.16.1.tgz#bc3e33c46af0eea93ee0c4bbb37dd41bf9548711"
+
+"@esbuild/freebsd-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-x64/-/freebsd-x64-0.16.1.tgz#48fba6c63463409452ebc8544139e091b7797afb"
+
+"@esbuild/linux-arm64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm64/-/linux-arm64-0.16.1.tgz#b2275692feeb7b6f42d8eb25ddf1c96a0378b586"
+
+"@esbuild/linux-arm@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm/-/linux-arm-0.16.1.tgz#a54ac0c0f69b504134fbe7f173a66432f54331aa"
+
+"@esbuild/linux-ia32@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ia32/-/linux-ia32-0.16.1.tgz#e34635e929c17ff4f3cadcec656813574a654ef9"
+
+"@esbuild/linux-loong64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.16.1.tgz#b9382c5e3e0640e093a18f42680e87ac0f79094b"
+
+"@esbuild/linux-mips64el@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-mips64el/-/linux-mips64el-0.16.1.tgz#9b5ecec04f308d7e9951cd11bad607ced1b25ab5"
+
+"@esbuild/linux-ppc64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ppc64/-/linux-ppc64-0.16.1.tgz#8af2ab35166ff56bcabb2094e956d12b261db321"
+
+"@esbuild/linux-riscv64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-riscv64/-/linux-riscv64-0.16.1.tgz#a037d507ad99128c75c835db42aa5bf5ed1a5a3e"
+
+"@esbuild/linux-s390x@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-s390x/-/linux-s390x-0.16.1.tgz#9700a2595de1363c60723810a88c83f6aec24006"
+
+"@esbuild/linux-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-x64/-/linux-x64-0.16.1.tgz#113cb7634aeed6da9c8edef43df0f0266edaf5d4"
+
+"@esbuild/netbsd-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/netbsd-x64/-/netbsd-x64-0.16.1.tgz#77ae84d4674d6c315a4b652ccbb27ce8e9484dcd"
+
+"@esbuild/openbsd-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/openbsd-x64/-/openbsd-x64-0.16.1.tgz#5401d9199efb469ad6f37fdfcaefd16cb2176fd3"
+
+"@esbuild/sunos-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/sunos-x64/-/sunos-x64-0.16.1.tgz#c8d84eb61f66d3811051b9b5c4b63e9ee126217c"
+
+"@esbuild/win32-arm64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-arm64/-/win32-arm64-0.16.1.tgz#4b63fdc90349053deaea6c3159837b85f7d73417"
+
+"@esbuild/win32-ia32@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-ia32/-/win32-ia32-0.16.1.tgz#1c6c88fb57c426d03bc1fd96461eb0f2e596fc4f"
+
+"@esbuild/win32-x64@0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.1.tgz#ca4024c5fa8bbf32cf586fd1e201d26720becc71"
 
 "@hotwired/stimulus@^3.1.0":
   version "3.1.1"
@@ -72,112 +152,32 @@ braces@~3.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-esbuild-android-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-android-64/-/esbuild-android-64-0.15.13.tgz#5f25864055dbd62e250f360b38b4c382224063af"
-
-esbuild-android-arm64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.15.13.tgz#d8820f999314efbe8e0f050653a99ff2da632b0f"
-
-esbuild-darwin-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.15.13.tgz#99ae7fdaa43947b06cd9d1a1c3c2c9f245d81fd0"
-
-esbuild-darwin-arm64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.15.13.tgz#bafa1814354ad1a47adcad73de416130ef7f55e3"
-
-esbuild-freebsd-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-freebsd-64/-/esbuild-freebsd-64-0.15.13.tgz#84ef85535c5cc38b627d1c5115623b088d1de161"
-
-esbuild-freebsd-arm64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.15.13.tgz#033f21de434ec8e0c478054b119af8056763c2d8"
-
-esbuild-linux-32@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-32/-/esbuild-linux-32-0.15.13.tgz#54290ea8035cba0faf1791ce9ae6693005512535"
-
-esbuild-linux-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.13.tgz"
-
-esbuild-linux-arm64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-arm64/-/esbuild-linux-arm64-0.15.13.tgz#9323c333924f97a02bdd2ae8912b36298acb312d"
-
-esbuild-linux-arm@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-arm/-/esbuild-linux-arm-0.15.13.tgz#b407f47b3ae721fe4e00e19e9f19289bef87a111"
-
-esbuild-linux-mips64le@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.15.13.tgz#bdf905aae5c0bcaa8f83567fe4c4c1bdc1f14447"
-
-esbuild-linux-ppc64le@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.15.13.tgz#2911eae1c90ff58a3bd3259cb557235df25aa3b4"
-
-esbuild-linux-riscv64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.15.13.tgz#1837c660be12b1d20d2a29c7189ea703f93e9265"
-
-esbuild-linux-s390x@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-s390x/-/esbuild-linux-s390x-0.15.13.tgz#d52880ece229d1bd10b2d936b792914ffb07c7fc"
-
-esbuild-netbsd-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-netbsd-64/-/esbuild-netbsd-64-0.15.13.tgz#de14da46f1d20352b43e15d97a80a8788275e6ed"
-
-esbuild-openbsd-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.15.13.tgz#45e8a5fd74d92ad8f732c43582369c7990f5a0ac"
-
-esbuild-sunos-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.15.13.tgz#f646ac3da7aac521ee0fdbc192750c87da697806"
-
-esbuild-windows-32@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-32/-/esbuild-windows-32-0.15.13.tgz#fb4fe77c7591418880b3c9b5900adc4c094f2401"
-
-esbuild-windows-64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-64/-/esbuild-windows-64-0.15.13.tgz#1fca8c654392c0c31bdaaed168becfea80e20660"
-
-esbuild-windows-arm64@0.15.13:
-  version "0.15.13"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.15.13.tgz#4ffd01b6b2888603f1584a2fe96b1f6a6f2b3dd8"
-
-esbuild@^0.15.11:
-  version "0.15.13"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.15.13.tgz"
+esbuild@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.16.1.tgz#c3b20a11f612f188a78efed63598b560caf1b365"
   optionalDependencies:
-    "@esbuild/android-arm" "0.15.13"
-    "@esbuild/linux-loong64" "0.15.13"
-    esbuild-android-64 "0.15.13"
-    esbuild-android-arm64 "0.15.13"
-    esbuild-darwin-64 "0.15.13"
-    esbuild-darwin-arm64 "0.15.13"
-    esbuild-freebsd-64 "0.15.13"
-    esbuild-freebsd-arm64 "0.15.13"
-    esbuild-linux-32 "0.15.13"
-    esbuild-linux-64 "0.15.13"
-    esbuild-linux-arm "0.15.13"
-    esbuild-linux-arm64 "0.15.13"
-    esbuild-linux-mips64le "0.15.13"
-    esbuild-linux-ppc64le "0.15.13"
-    esbuild-linux-riscv64 "0.15.13"
-    esbuild-linux-s390x "0.15.13"
-    esbuild-netbsd-64 "0.15.13"
-    esbuild-openbsd-64 "0.15.13"
-    esbuild-sunos-64 "0.15.13"
-    esbuild-windows-32 "0.15.13"
-    esbuild-windows-64 "0.15.13"
-    esbuild-windows-arm64 "0.15.13"
+    "@esbuild/android-arm" "0.16.1"
+    "@esbuild/android-arm64" "0.16.1"
+    "@esbuild/android-x64" "0.16.1"
+    "@esbuild/darwin-arm64" "0.16.1"
+    "@esbuild/darwin-x64" "0.16.1"
+    "@esbuild/freebsd-arm64" "0.16.1"
+    "@esbuild/freebsd-x64" "0.16.1"
+    "@esbuild/linux-arm" "0.16.1"
+    "@esbuild/linux-arm64" "0.16.1"
+    "@esbuild/linux-ia32" "0.16.1"
+    "@esbuild/linux-loong64" "0.16.1"
+    "@esbuild/linux-mips64el" "0.16.1"
+    "@esbuild/linux-ppc64" "0.16.1"
+    "@esbuild/linux-riscv64" "0.16.1"
+    "@esbuild/linux-s390x" "0.16.1"
+    "@esbuild/linux-x64" "0.16.1"
+    "@esbuild/netbsd-x64" "0.16.1"
+    "@esbuild/openbsd-x64" "0.16.1"
+    "@esbuild/sunos-x64" "0.16.1"
+    "@esbuild/win32-arm64" "0.16.1"
+    "@esbuild/win32-ia32" "0.16.1"
+    "@esbuild/win32-x64" "0.16.1"
 
 fill-range@^7.0.1:
   version "7.0.1"
